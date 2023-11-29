@@ -4,7 +4,6 @@ import Hero from "@/components/Hero/Hero";
 import StatList from "@/components/StatList/StatList";
 import Subscribe from "@/components/Subscribe/Subscribe";
 import WorkList from "@/components/WorkList/WorkList";
-import Image from "next/image";
 
 export default function Home() {
   return (
