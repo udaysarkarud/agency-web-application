@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const WorkListCard = ({ workTitle, WorkDes }) => {
   return (
@@ -9,6 +10,7 @@ const WorkListCard = ({ workTitle, WorkDes }) => {
         <p>{WorkDes}</p>
         <button className="btn group-hover:bg-orange-500 group-hover:text-white w-1/2">
           Learn More
+          <FaLongArrowAltRight />
         </button>
       </div>
     </div>
