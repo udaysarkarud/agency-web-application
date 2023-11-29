@@ -53,12 +53,6 @@ const Hero = async () => {
             />
           </div>
         </div>
-        {/*  <div className="w-1/2 grid grid-cols-2 gap-3">
-          <Image src={data.image1} width={300} height={300} alt="Hero image" />
-          <Image src={data.image2} width={300} height={300} alt="Hero image" />
-          <Image src={data.image3} width={300} height={300} alt="Hero image" />
-          <Image src={data.image4} width={300} height={300} alt="Hero image" />
-        </div> */}
       </div>
       <OurPartners />
     </div>

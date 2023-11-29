@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+
 async function getData() {
   const res = await fetch("https://agency.teamrabbil.com/api/TeamList");
   const data = res.json();
@@ -12,8 +13,11 @@ async function getData() {
 const page = async () => {
   const data = await getData();
   return (
-    <div>
-      <ComponentsHeading />
+    <>
+      <ComponentsHeading
+        headingTitle={"Our Team Member"}
+        headingDes={"Check our awesome team members"}
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {data.map((team) => {
           return (
@@ -45,7 +49,7 @@ const page = async () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 
