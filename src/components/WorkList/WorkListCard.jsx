@@ -2,11 +2,15 @@ import React from "react";
 
 const WorkListCard = ({ workTitle, WorkDes }) => {
   return (
-    <div>
-      <p className="bg-amber-400 p-5">ABC</p>
-      <p className="font-extrabold text-xl">{workTitle}</p>
-      <p>{WorkDes}</p>
-      <p>Learn More-</p>
+    <div className="card">
+      <div className="card-body hover:shadow-xl space-y-3 group">
+        <p className="bg-teal-500 p-5 rounded-lg w-1/4 text-center">ABC</p>
+        <p className="font-extrabold text-3xl">{workTitle}</p>
+        <p>{WorkDes}</p>
+        <button className="btn group-hover:bg-orange-500 group-hover:text-white w-1/2">
+          Learn More
+        </button>
+      </div>
     </div>
   );
 };

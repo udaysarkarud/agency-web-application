@@ -10,12 +10,12 @@ async function getData() {
 const WorkList = async () => {
   const data = await getData();
   return (
-    <div className="p-10 space-y-5">
+    <div className="p-10 space-y-10">
       <ComponentsHeading
         headingTitle={"Work List"}
         headingDes={"We provide the Perfect Solution to your business growth"}
       />
-      <div className="grid grid-cols-4 gap-4 justify-center">
+      <div className="grid grid-cols-3 gap-4">
         {data.map((work) => {
           return (
             <WorkListCard

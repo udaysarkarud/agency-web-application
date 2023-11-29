@@ -13,27 +13,27 @@ const Hero = async () => {
   return (
     <div className="bg-green-300">
       <Navbar />
-      <div className="hero-section p-10 flex flex-row items-center justify-center">
-        <div className="w-1/2 space-y-4">
-          <div>
-            <h1 className="font-extrabold text-3xl">{data.title}</h1>
-            <p>{data.description}</p>
-          </div>
+      <div className="hero-section py-10 flex items-center justify-around">
+        <div className="w-1/3 space-y-5 ">
+          <h1 className="font-extrabold text-5xl">{data.title}</h1>
+          <p>{data.description}</p>
           <button className="btn btn-success text-white">Get Started</button>
         </div>
-        <div className="w-1/2 flex gap-2">
+        <div className="w-1/2 flex gap-2 justify-end">
           <div className="flex flex-col  gap-2">
             <Image
               src={data.image1}
               width={250}
               height={250}
               alt="Hero image"
+              className="rounded-lg"
             />
             <Image
               src={data.image2}
               width={250}
               height={250}
               alt="Hero image"
+              className="rounded-lg"
             />
           </div>
           <div className="flex flex-col  gap-2">
@@ -42,12 +42,14 @@ const Hero = async () => {
               width={250}
               height={250}
               alt="Hero image"
+              className="rounded-lg"
             />
             <Image
               src={data.image4}
               width={250}
               height={250}
               alt="Hero image"
+              className="rounded-lg"
             />
           </div>
         </div>

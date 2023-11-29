@@ -9,16 +9,17 @@ const OurPartners = async () => {
   const data = await getData();
   return (
     <div className="bg-slate-300  p-10">
-      <div className="grid grid-cols-4 gap-4 items-center">
+      <div className="grid grid-cols-4 gap-4 items-center place-items-center">
         {data.map((brand) => {
           return (
-            <Image
-              key={brand.id}
-              src={brand.image}
-              width={100}
-              height={100}
-              alt={brand.title}
-            />
+            <div key={brand.id}>
+              <Image
+                src={brand.image}
+                width={100}
+                height={100}
+                alt={brand.title}
+              />
+            </div>
           );
         })}
       </div>
