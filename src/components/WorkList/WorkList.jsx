@@ -17,13 +17,7 @@ const WorkList = async () => {
       />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {data.map((work) => {
-          return (
-            <WorkListCard
-              key={work.id}
-              workTitle={work.title}
-              WorkDes={work.des}
-            />
-          );
+          return <WorkListCard key={work.id} work={work} />;
         })}
       </div>
     </div>
