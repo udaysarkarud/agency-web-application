@@ -20,13 +20,13 @@ const TeamCard = ({ team }) => {
 
       <div className="absolute mt-80 ml-20 hidden justify-end group-hover:block">
         <div className="flex justify-center space-x-9 text-4xl mt-5 bg-slate-300 rounded-full p-3">
-          <Link href={team.facebook}>
+          <Link href={`https://${team.facebook}`}>
             <FaFacebook className="hover:text-teal-500" />
           </Link>
-          <Link href={team.facebook}>
+          <Link href={`https://${team.twitter}`}>
             <FaTwitter className="hover:text-teal-500" />
           </Link>
-          <Link href={team.facebook}>
+          <Link href={`https://${team.instagram}`}>
             <BsInstagram className="hover:text-teal-500" />
           </Link>
         </div>

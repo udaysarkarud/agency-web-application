@@ -30,7 +30,7 @@ const Footer = async () => {
                 return (
                   <a
                     key={social.id}
-                    href={social.link}
+                    href={`https://${social.link}`}
                     className=" text-2xl text-white"
                   >
                     {social.name == "facebook" && (

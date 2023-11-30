@@ -20,11 +20,13 @@ const page = async () => {
           return (
             <div
               key={service.id}
-              class="max-w-2xl mx-auto bg-white p-8 shadow-md space-y-5 rounded-xl"
+              className="max-w-2xl mx-auto bg-white p-8 shadow-md space-y-5 rounded-xl"
             >
-              <h1 class="text-3xl font-bold text-gray-800">{service.title}</h1>
-              <p class="text-gray-500">{service.des}</p>
-              <div class="grid grid-cols-2 gap-4">
+              <h1 className="text-3xl font-bold text-gray-800">
+                {service.title}
+              </h1>
+              <p className="text-gray-500">{service.des}</p>
+              <div className="grid grid-cols-2 gap-4">
                 <Image
                   src={service.image1}
                   width={300}

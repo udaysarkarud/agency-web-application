@@ -19,7 +19,7 @@ const page = async () => {
           return (
             <div
               key={project.id}
-              class=" bg-white p-8 shadow-md space-y-5 rounded-xl"
+              className=" bg-white p-8 shadow-md space-y-5 rounded-xl"
             >
               <Image
                 src={project.image}
@@ -28,7 +28,9 @@ const page = async () => {
                 alt={project.title}
                 className="rounded-xl"
               />
-              <h1 class="text-2xl font-bold text-gray-800">{project.title}</h1>
+              <h1 className="text-2xl font-bold text-gray-800">
+                {project.title}
+              </h1>
             </div>
           );
         })}
