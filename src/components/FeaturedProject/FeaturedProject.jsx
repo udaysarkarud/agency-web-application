@@ -22,15 +22,17 @@ const FeaturedProject = async () => {
               src={data[0]["image"]}
               width={500}
               height={500}
-              className="w-full h-2/3"
+              className="w-full h-fit object-cover"
             />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">{data[0]["title"]}</div>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                {data.remark}
-              </span>
+            <div className="flex flex-col justify-center mt-5">
+              <div className="px-3 pt-4">
+                <span className="inline-block rounded-full px-3 py-1 text-sm font-light text-gray-400 mr-2 mb-2">
+                  App Design - June 20, 2022
+                </span>
+              </div>
+              <div className="px-6">
+                <div className="font-bold text-xl">{data[0]["title"]}</div>
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
