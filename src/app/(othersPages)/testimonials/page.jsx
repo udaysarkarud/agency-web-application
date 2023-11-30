@@ -14,17 +14,17 @@ const page = async () => {
         headingTitle={"Testimonial List"}
         headingDes={"Better Agency/SEO Solution At Your Fingertips"}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map((testimonial) => {
           return (
             <div key={testimonial.id} className="card bg-base-100 shadow-xl">
               <figure>
                 <Image
                   src={testimonial.image}
-                  width={100}
-                  height={100}
+                  width={200}
+                  height={200}
                   alt={testimonial.name}
-                  className="rounded-xl shadow-2xl"
+                  className="rounded-xl shadow-2xl mt-10"
                 />
               </figure>
               <div className="card-body text-center">

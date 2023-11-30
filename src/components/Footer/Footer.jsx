@@ -13,7 +13,7 @@ const Footer = async () => {
   const data = await getData();
   return (
     <footer>
-      <div className="footer p-5 md:p-10 bg-base-200 text-base-content">
+      <div className="footer p-5 md:p-10 bg-black text-base-content text-white">
         <aside className="space-y-4">
           <Link href="/" className="text-xl font-extrabold">
             Design
@@ -31,16 +31,16 @@ const Footer = async () => {
                   <a
                     key={social.id}
                     href={social.link}
-                    className="text-teal-500 text-2xl"
+                    className=" text-2xl text-white"
                   >
                     {social.name == "facebook" && (
-                      <FaFacebook className="hover:text-black" />
+                      <FaFacebook className="hover:text-teal-500" />
                     )}
                     {social.name == "twitter" && (
-                      <FaTwitter className="hover:text-black" />
+                      <FaTwitter className="hover:text-teal-500" />
                     )}
                     {social.name == "instagram" && (
-                      <BsInstagram className="hover:text-black" />
+                      <BsInstagram className="hover:text-teal-500" />
                     )}
                   </a>
                 );
@@ -91,9 +91,9 @@ const Footer = async () => {
           </Link>
         </nav>
       </div>
-      <div className="footer items-center px-5 md:px-10 py-5 bg-neutral text-neutral-content">
+      <div className="footer items-center px-5 md:px-10 py-5 bg-black text-neutral-content">
         <aside className="items-center grid-flow-col">
-          <p>Copyright © 2023 - All right reserved</p>
+          <p>Copyright Design Agency 2022</p>
         </aside>
       </div>
     </footer>

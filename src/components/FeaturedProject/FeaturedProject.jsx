@@ -23,6 +23,7 @@ const FeaturedProject = async () => {
               width={500}
               height={500}
               className="w-full h-fit object-cover"
+              alt=""
             />
             <div className="flex flex-col justify-center md:mt-5">
               <div className="px-3 pt-4">

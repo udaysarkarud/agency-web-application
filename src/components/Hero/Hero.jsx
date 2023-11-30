@@ -11,7 +11,7 @@ async function getData() {
 const Hero = async () => {
   const data = await getData();
   return (
-    <div className="bg-[#D7F5DC]">
+    <div className="bg-[#D7F5DC] pb-10">
       <Navbar />
       <div className="hero-section p-5 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between space-y-5 md:space-y-0">
         <div className="md:w-1/3 space-y-5 ">
