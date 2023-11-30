@@ -8,7 +8,7 @@ async function getData() {
 const OurPartners = async () => {
   const data = await getData();
   return (
-    <div className="bg-slate-300  p-10">
+    <div className="bg-slate-300  p-5 md:p-10">
       <div className="grid grid-cols-4 gap-4 items-center place-items-center">
         {data.map((brand) => {
           return (

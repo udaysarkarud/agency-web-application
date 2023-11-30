@@ -10,7 +10,7 @@ async function getData() {
 const WorkList = async () => {
   const data = await getData();
   return (
-    <div className="p-10">
+    <div className="p-5 md:p-10">
       <ComponentsHeading
         headingTitle={"Work List"}
         headingDes={"We provide the Perfect Solution to your business growth"}

@@ -17,10 +17,7 @@ const page = async () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {data.map((testimonial) => {
           return (
-            <div
-              key={testimonial.id}
-              className="card w-96 bg-base-100 shadow-xl"
-            >
+            <div key={testimonial.id} className="card bg-base-100 shadow-xl">
               <figure>
                 <Image
                   src={testimonial.image}

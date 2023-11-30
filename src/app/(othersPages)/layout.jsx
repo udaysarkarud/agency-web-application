@@ -11,7 +11,7 @@ const layout = ({ children }) => {
         <Navbar />
         <Breadcrumbs />
       </header>
-      <main className="p-10">
+      <main className="p-5 md:p-10">
         {children}
         <Subscribe />
       </main>

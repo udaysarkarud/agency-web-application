@@ -9,7 +9,7 @@ async function getData() {
 const StatList = async () => {
   const data = await getData();
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10 my-10">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 md:p-10 my-10">
       <StatListCard count={data.followers} name={"Followers"} />
       <StatListCard count={data.solved} name={"Solved Problems"} />
       <StatListCard count={data.customers} name={"Happy Customers"} />

@@ -22,7 +22,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="p-5">
+    <div className="p-0 md:p-5">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -46,19 +46,22 @@ const Navbar = () => {
               {navmenu}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl font-extrabold">
+
+          <Link href="/" className="btn btn-ghost text-xl font-extrabold">
             Design
             <span className="text-red-600">AGENCY</span>
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-bold">{navmenu}</ul>
         </div>
-        <div className="navbar-end space-x-2">
-          <button className="btn btn-outline btn-success font-bold">
-            Login
-          </button>
-          <button className="btn btn-success text-white">Register</button>
+        <div className="navbar-end">
+          <div className="space-x-2 hidden md:block">
+            <button className="btn btn-outline btn-success font-bold">
+              Login
+            </button>
+            <button className="btn btn-success text-white">Register</button>
+          </div>
         </div>
       </div>
     </div>

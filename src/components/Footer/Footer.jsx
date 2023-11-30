@@ -13,7 +13,7 @@ const Footer = async () => {
   const data = await getData();
   return (
     <footer>
-      <div className="footer p-10 bg-base-200 text-base-content">
+      <div className="footer p-5 md:p-10 bg-base-200 text-base-content">
         <aside>
           <svg
             width="50"
@@ -76,7 +76,7 @@ const Footer = async () => {
           <a className="link link-hover">Cookie policy</a>
         </nav>
       </div>
-      <div className="footer items-center px-10 py-5 bg-neutral text-neutral-content">
+      <div className="footer items-center px-5 md:px-10 py-5 bg-neutral text-neutral-content">
         <aside className="items-center grid-flow-col">
           <p>Copyright © 2023 - All right reserved</p>
         </aside>

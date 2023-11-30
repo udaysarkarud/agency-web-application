@@ -13,9 +13,9 @@ const Hero = async () => {
   return (
     <div className="bg-[#D7F5DC]">
       <Navbar />
-      <div className="hero-section p-10 flex flex-col md:flex-row md:items-center md:justify-between space-y-5 md:space-y-0">
+      <div className="hero-section p-5 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between space-y-5 md:space-y-0">
         <div className="md:w-1/3 space-y-5 ">
-          <h1 className="font-extrabold text-5xl">{data.title}</h1>
+          <h1 className="font-extrabold text-3xl md:text-5xl">{data.title}</h1>
           <p>{data.description}</p>
           <button className="btn btn-success text-white">Get Started</button>
         </div>

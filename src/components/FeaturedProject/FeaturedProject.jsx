@@ -10,7 +10,7 @@ async function getData() {
 const FeaturedProject = async () => {
   const data = await getData();
   return (
-    <div className="p-10 my-10 space-y-20 ">
+    <div className="p-5 md:p-10 my-10 space-y-20 ">
       <ComponentsHeading
         headingTitle={"Featured Project"}
         headingDes={"We provide the Perfect Solution to your business growth"}
